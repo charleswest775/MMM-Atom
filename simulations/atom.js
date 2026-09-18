@@ -20,7 +20,9 @@
 	const ALPHA = 1 / 137.035999; // fine-structure constant = v/c of hydrogen's ground-state electron
 	const RYDBERG_EV = 13.605693; // hydrogen's ground-state binding energy, eV
 
-	const INNER_PERIOD = 5;       // seconds per revolution of the innermost shell
+	// seconds per revolution of the innermost shell: unhurried, so the electrons move only a few
+	// pixels per frame at 12 fps, which on the Pi costs half of what 20 fps does
+	const INNER_PERIOD = 8;
 	const MIN_SHELLS = 4;         // light atoms are drawn as if they had this many shells, so hydrogen isn't one huge ring
 	const FADE_IN = 1.5;          // seconds
 
