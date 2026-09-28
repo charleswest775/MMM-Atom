@@ -13,8 +13,8 @@
  * CSS; this one draws on the module's canvas so the Pi's frame cap and suspend() apply.
  */
 (function (root) {
-	const ELEMENTS = root.ChaosElements || require("../data/elements.js");
-	const HISTORY = root.ChaosElementHistory || require("../data/element-history.js");
+	const ELEMENTS = root.AtomElements || require("../data/elements.js");
+	const HISTORY = root.AtomElementHistory || require("../data/element-history.js");
 
 	const A0_PM = 52.917721;      // Bohr radius, pm
 	const ALPHA = 1 / 137.035999; // fine-structure constant = v/c of hydrogen's ground-state electron
@@ -202,15 +202,15 @@
 			const facts = [
 				["Discovered by", hist.by],
 				["Discovered", hist.year],
-				["Joined the table", `${hist.table} <span class="chaos-facts-note">${hist.note}</span>`],
+				["Joined the table", `${hist.table} <span class="atom-facts-note">${hist.note}</span>`],
 				["How", hist.how]
 			];
 			return {
-				title: `<span style="color:${this.color}">${e.number}</span> ${e.name} <span class="chaos-symbol">${this.symbol}</span>`,
+				title: `<span style="color:${this.color}">${e.number}</span> ${e.name} <span class="atom-symbol">${this.symbol}</span>`,
 				subtitle: `${tidyCategory(e.category)} · ${e.phase.toLowerCase()} at room temperature · ${Number(e.mass.toFixed(3))} u`,
 				equations: [
-					`<div class="chaos-facts">${facts.map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>`,
-					"<span class=\"chaos-note\">Bohr-style picture: electrons per shell are real, periods follow T² ∝ r³, radii are schematic</span>"
+					`<div class="atom-facts">${facts.map(([k, v]) => `<span>${k}</span><span>${v}</span>`).join("")}</div>`,
+					"<span class=\"atom-note\">Bohr-style picture: electrons per shell are real, periods follow T² ∝ r³, radii are schematic</span>"
 				]
 			};
 		}
@@ -224,7 +224,7 @@
 		}
 	}
 
-	root.ChaosSimulations = root.ChaosSimulations || {};
-	root.ChaosSimulations.atom = Atom;
+	root.AtomSimulations = root.AtomSimulations || {};
+	root.AtomSimulations.atom = Atom;
 	if (typeof module !== "undefined") module.exports = { Atom };
 })(typeof window !== "undefined" ? window : globalThis);

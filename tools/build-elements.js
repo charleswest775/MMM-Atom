@@ -35,7 +35,7 @@ const out = `/* Properties of the 118 chemical elements, keyed by symbol. Genera
 ${rows.join(",\n")}
 	};
 
-	root.ChaosElements = ELEMENTS;
+	root.AtomElements = ELEMENTS;
 	if (typeof module !== "undefined") module.exports = ELEMENTS;
 })(typeof window !== "undefined" ? window : globalThis);
 `;

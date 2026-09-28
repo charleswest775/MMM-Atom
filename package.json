@@ -1,11 +1,26 @@
 {
-  "name": "mmm-chaostheory",
-  "version": "0.4.0",
-  "description": "MagicMirror² module: animated chaos-theory simulations (Lorenz attractor, diverging pendulums, fractal basins, logistic map, symmetric icons, the three-body problem, chaotic billiards, rule 30), and pages of physics and mathematics: a Bohr-style atom and hydrogen's orbitals, a fractal zoom, sacred geometry, the planets' dance, Chladni figures, aperiodic and hyperbolic tilings, snow crystals, and tonight's sky.",
-  "main": "MMM-ChaosTheory.js",
+  "name": "mmm-atom",
+  "version": "1.0.0",
+  "description": "MagicMirror² module: animated atom-theory simulations (Lorenz attractor, diverging pendulums, fractal basins, logistic map, symmetric icons, the three-body problem, chaotic billiards, rule 30), and pages of physics and mathematics: a Bohr-style atom and hydrogen's orbitals, a fractal zoom, sacred geometry, the planets' dance, Chladni figures, aperiodic and hyperbolic tilings, snow crystals, and tonight's sky.",
+  "main": "MMM-Atom.js",
   "scripts": {
     "test": "node --test"
   },
-  "keywords": ["MagicMirror", "chaos", "double pendulum", "lorenz", "animation", "physics", "sacred geometry", "orbits", "chladni", "quasicrystal", "hyperbolic", "snowflake", "star chart", "three-body"],
+  "keywords": [
+    "MagicMirror",
+    "atom",
+    "Bohr model",
+    "hydrogen",
+    "orbitals",
+    "quantum mechanics",
+    "periodic table",
+    "chemistry",
+    "physics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charleswest775/MMM-Atom.git"
+  },
+  "author": "Charles West",
   "license": "MIT"
 }

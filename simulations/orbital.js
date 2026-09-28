@@ -1,4 +1,4 @@
-/* Not chaos: the quantum atom, the sequel to the Bohr atom. Hydrogen's electron in one of its
+/* The quantum atom, the sequel to the Bohr atom. Hydrogen's electron in one of its
  * states |n l m⟩, shown the only way it can be seen: measurement by measurement. Each dot is a
  * place the electron was found, drawn at random with probability |ψ|² (Born's rule), in a thin
  * slice through the nucleus: the plane containing the z axis (x–z), or for the circular states
@@ -316,12 +316,12 @@
 				? `seen from above, in the plane it circles in: a ring whose most likely radius, n²a₀ = ${n * n} a₀, is exactly Bohr's orbit (dashed); the colours are ψ's real part, whose phase winds ${m} times round`
 				: `in a slice through the nucleus, the z axis upright; dashed, Bohr's orbit for the same energy, n²a₀ = ${n * n} a₀`;
 			return {
-				title: `The quantum atom <span class="chaos-symbol">hydrogen, ${this.name()}</span>`,
+				title: `The quantum atom <span class="atom-symbol">hydrogen, ${this.name()}</span>`,
 				subtitle: `the state |n l m⟩ = |${n} ${l} ${m}⟩ · each dot one measurement of where the electron is, ${where}`,
 				equations: [
 					"ψ<sub>nlm</sub> = R<sub>nl</sub>(r) Y<sub>l</sub><sup>m</sup>(θ, φ), &nbsp; |ψ|² = how likely the electron is to be found there",
 					`E = −13.6 eV / n² = −${E < 1 ? E.toFixed(3) : E.toFixed(2)} eV, as in Bohr's model; ${nodes}`,
-					`<span class="chaos-note">${this.story}</span>`
+					`<span class="atom-note">${this.story}</span>`
 				]
 			};
 		}
@@ -343,7 +343,7 @@
 	Orbital.meanRadius = meanRadius;
 	Orbital.info = { title: "The quantum atom", equations: [] };
 
-	root.ChaosSimulations = root.ChaosSimulations || {};
-	root.ChaosSimulations.orbital = Orbital;
+	root.AtomSimulations = root.AtomSimulations || {};
+	root.AtomSimulations.orbital = Orbital;
 	if (typeof module !== "undefined") module.exports = { Orbital };
 })(typeof window !== "undefined" ? window : globalThis);

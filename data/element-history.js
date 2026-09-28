@@ -252,6 +252,6 @@
 			how: "Made by firing calcium-48 ions at californium-249: one atom in 2002, more in 2005, announced in 2006. An earlier claim from Berkeley, in 1999, was withdrawn when its data proved to have been fabricated." }
 	};
 
-	root.ChaosElementHistory = HISTORY;
+	root.AtomElementHistory = HISTORY;
 	if (typeof module !== "undefined") module.exports = HISTORY;
 })(typeof window !== "undefined" ? window : globalThis);

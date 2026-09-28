@@ -124,6 +124,6 @@
 		"Og": {"number":118,"name":"Oganesson","mass":294,"category":"unknown, predicted to be noble gas","phase":"Solid","shells":[2,8,18,32,32,18,8],"configuration":"*[Rn] 5f14 6d10 7s2 7p6"}
 	};
 
-	root.ChaosElements = ELEMENTS;
+	root.AtomElements = ELEMENTS;
 	if (typeof module !== "undefined") module.exports = ELEMENTS;
 })(typeof window !== "undefined" ? window : globalThis);
