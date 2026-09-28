@@ -1,7 +1,7 @@
 {
   "name": "mmm-atom",
   "version": "1.0.0",
-  "description": "MagicMirror² module: animated atom-theory simulations (Lorenz attractor, diverging pendulums, fractal basins, logistic map, symmetric icons, the three-body problem, chaotic billiards, rule 30), and pages of physics and mathematics: a Bohr-style atom and hydrogen's orbitals, a fractal zoom, sacred geometry, the planets' dance, Chladni figures, aperiodic and hyperbolic tilings, snow crystals, and tonight's sky.",
+  "description": "MagicMirror² module: a Bohr-style atom, element by element with the story of its discovery, taking turns with hydrogen's quantum orbitals, measured dot by dot.",
   "main": "MMM-Atom.js",
   "scripts": {
     "test": "node --test"
