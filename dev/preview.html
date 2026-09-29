@@ -43,7 +43,7 @@
 		(async () => {
 			const q = new URLSearchParams(location.search);
 			const config = { ...definition.defaults };
-			for (const [k, v] of q) config[k] = k === "simulations" || k === "atomElements" ? v.split(",") : k === "sacredSeed" || isNaN(v) ? v : Number(v);
+			for (const [k, v] of q) config[k] = k === "simulations" || k === "atomElements" ? v.split(",") : k === "sacredSeed" || v === "true" ? true : v === "false" ? false : isNaN(v) ? v : Number(v);
 			const m = Object.assign(Object.create(definition), { config, name: "MMM-Atom", hidden: false, data: {} });
 			m.file = (f) => `../${f}`;
 			// no node_helper here: feed the stats panel made-up numbers so its layout can be seen
