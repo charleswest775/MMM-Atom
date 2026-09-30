@@ -6,7 +6,7 @@ simulations taking turns, one per showing: `atom` (Bohr, 1913) and `orbital` (Sc
 Split out of MMM-ChaosTheory on 2026-09-28, with its history (it was the "atom page" there, a
 second instance of that module). Siblings from the same split: MMM-ChaosTheory, MMM-FractalZoom,
 MMM-Chladni, MMM-SacredGeometry, MMM-Tilings, MMM-PlanetsDance, MMM-SnowCrystal, MMM-NightSky,
-MMM-PhotoDeck. The shell (`MMM-Atom.js`, the `node_helper.js` stats panel, `dev/preview.html`)
+MMM-PhotoDeck, and since 2026-09-29 MMM-StandardMap, MMM-ChaoticWaterwheel, MMM-DoubleSlit, MMM-Sandpile, MMM-Harmonograph. The shell (`MMM-Atom.js`, the `node_helper.js` stats panel, `dev/preview.html`)
 is shared in spirit with them: a fix there probably belongs in the siblings too.
 
 ## Files
